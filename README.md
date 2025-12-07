@@ -22,7 +22,7 @@
 - 🌱 I’m currently learning **Advanced PHP & Frameworks**
 - 👯 I’m looking to collaborate on **Open Source Projects**
 - 💬 Ask me about **CSS, HTML, PHP**
-- 📫 How to reach me: **nafisahossainn@example.com**
+- 📫 How to reach me: **nafisahossain1211@gmail.com**
 
 ---
 
