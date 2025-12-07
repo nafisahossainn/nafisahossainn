@@ -51,5 +51,5 @@
 ---
 
 <div align="center">
-  <img src="https://github.com/nafisahossainn/nafisahossainn/blob/output/github-contribution-grid-snake.svg" alt="snake animation" />
+  <img align="center" src="https://github.com/ShinoKana/ShinoKana/blob/main/github-contribution-grid-snake.svg" alt="snake animation" width="1000" />
 </div>
