@@ -38,11 +38,11 @@
 
 ### 📊 GitHub Stats
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nafisahossainn&show_icons=true&theme=radical&hide_border=true" height="180" alt="stats graph"  />
   
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nafisahossainn&layout=compact&theme=radical&hide_border=true" height="180" alt="languages graph" />
-</div>
+</div> -->
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nafisahossainn&theme=radical&hide_border=true" alt="streak graph" />
