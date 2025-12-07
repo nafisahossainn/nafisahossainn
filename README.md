@@ -1,10 +1,5 @@
 ## Hi there 👋
 
-<!--
-**nafisahossainn/nafisahossainn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
@@ -13,4 +8,103 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
+
+<div align="center">
+  
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Hi+There!+%F0%9F%91%8B;I'm+Nafisa+Hossainn;I+Love+Coding;Welcome+to+My+Profile!" alt="Typing SVG" />
+  </a>
+
+  <p align="center">
+    <img src="https://komarev.com/ghpvc/?username=nafisahossainn&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="nafisahossainn" />
+  </p>
+
+  <p align="center">
+    <a href="https://github.com/ryo-ma/github-profile-trophy">
+      <img src="https://github-profile-trophy.vercel.app/?username=nafisahossainn&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="nafisahossainn" />
+    </a>
+  </p>
+</div>
+
+---
+
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
+- 🔭 I’m currently working on **Web Development**
+- 🌱 I’m currently learning **Advanced PHP & Frameworks**
+- 👯 I’m looking to collaborate on **Open Source Projects**
+- 💬 Ask me about **CSS, HTML, PHP**
+- 📫 How to reach me: **nafisahossainn@example.com**
+
+---
+
+### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> Languages & Tools
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,php,mysql,js,vscode,git,github&perline=8" />
+  <br>
+  <img src="https://skillicons.dev/icons?i=bootstrap,tailwind,figma,linux,windows&perline=8" />
+</div>
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nafisahossainn&show_icons=true&theme=radical&hide_border=true" height="180" alt="stats graph"  />
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nafisahossainn&layout=compact&theme=radical&hide_border=true" height="180" alt="languages graph" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nafisahossainn&theme=radical&hide_border=true" alt="streak graph" />
+</div>
+
+---
+
+<div align="center">
+  <img src="https://github.com/nafisahossainn/nafisahossainn/blob/output/github-contribution-grid-snake.svg" alt="snake animation" />
+</div>
+
+name: Generate Snake
+
+on:
+  # run automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *" 
+  
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+    - main
+
+jobs:
+  generate:
+    permissions: 
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user_name>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
